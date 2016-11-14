@@ -5,9 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { ArticleComponent } from './article/article.component';
+import { RedditComponent } from './reddit/reddit.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArticleComponent,
+    RedditComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +20,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [RedditComponent]
 })
 export class AppModule { }
